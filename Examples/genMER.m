@@ -154,7 +154,7 @@ plumeHeight = 8000 + plumeBase;            %(m) Lava Fountain
 ashDia_v = .0001:.0025:.1001;              % Ash Diameter mm
 
 %Create plume  shifted 150m to the NE
-plumeRes = [20,20,10];
+plumeRes = [40,40,20];
 plumeSize = [1000,1000,plumeHeight-plumeBase];
 shiftDist = 200;                           %(m) Estimated due to wind
 shiftDir = [8,3];                          %NE Direction of Plume Corradini
