@@ -4,8 +4,10 @@ addpath('emag_lib');
 clear all;
  
 %Simulation time 
-startTime = datetime(2013,11,23,9,50,0,'TimeZone','UTC');
-endTime = datetime(2013,11,23,10,17,0,'TimeZone','UTC');
+startTime = datetime(2013,11,23,9,59,0,'TimeZone','UTC');
+endTime = datetime(2013,11,23,10,00,0,'TimeZone','UTC');
+% startTime = datetime(2013,11,23,9,50,0,'TimeZone','UTC')
+%endTime = datetime(2013,11,23,10,17,0,'TimeZone','UTC');
 
 %Configuration Matrix
 %Row: e_s_rel, k, uN, MER, vVent
