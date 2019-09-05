@@ -1,7 +1,7 @@
 clear all;
 % close all;
 warning('off','MATLAB:scatteredInterpolant:DupPtsAvValuesWarnId');
-addpath('lib');
+addpath('kml_lib');
 addpath('emag_lib');
 addpath('plotGen');
 addpath('azel');

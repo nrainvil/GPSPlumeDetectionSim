@@ -1,5 +1,5 @@
 warning('off','MATLAB:scatteredInterpolant:DupPtsAvValuesWarnId');
-addpath('lib');
+addpath('kml_lib');
 addpath('emag_lib');
 profile on;
 g = 9.8; %m/s
