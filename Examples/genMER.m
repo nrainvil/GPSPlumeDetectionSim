@@ -154,7 +154,7 @@ plumeHeight = 8000 + plumeBase;            %(m) Lava Fountain
 ashDia_v = .0001:.0025:.1001;              % Ash Diameter mm
 
 %Create plume  shifted 150m to the NE
-plumeRes = [40,40,20];
+plumeRes = [40,40,10];
 plumeSize = [1000,1000,plumeHeight-plumeBase];
 shiftDist = 200;                           %(m) Estimated due to wind
 shiftDir = [8,3];                          %NE Direction of Plume Corradini
@@ -188,6 +188,8 @@ t2 = datetime('now');
 fprintf('Start Time: %02.0f:%02.0f:%02.0f \n',t1.Hour,t1.Minute,t1.Second);
 fprintf('End Time: %02.0f:%02.0f:%02.0f \n',t2.Hour,t2.Minute,t2.Second);
 vsr.plotSim();
+
+end
 
 if(createGif==1)
    mfig = figure('pos',[300,100,550,450]);
