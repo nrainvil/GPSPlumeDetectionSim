@@ -9,11 +9,11 @@ function [ x_a ] = mie_cross_abs( a, freq, e_s_rel )
 %
 %%%%%%%%%%
 
-%Run from VAPR_sim, VAPR_mie
-addpath('../VAPR_mie/matscat');
-addpath('../VAPR_mie/matscat/bessel');
-addpath('../VAPR_mie/matscat/expcoeff');
-addpath('../VAPR_mie/matscat/util');
+%Run from VAPR_sim, MatScat
+addpath('../MatScat');
+addpath('../MatScat/bessel');
+addpath('../MatScat/expcoeff');
+addpath('../MatScat/util');
 
 x_a = zeros(size(a));
 lambda = physconst('LightSpeed')/freq; 
