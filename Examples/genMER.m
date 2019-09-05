@@ -188,16 +188,6 @@ t2 = datetime('now');
 fprintf('Start Time: %02.0f:%02.0f:%02.0f \n',t1.Hour,t1.Minute,t1.Second);
 fprintf('End Time: %02.0f:%02.0f:%02.0f \n',t2.Hour,t2.Minute,t2.Second);
 vsr.plotSim();
-matFile = sprintf('mat/epdn_FIX_l2_%2.0f_%02.0f_%02.0f_%03.0f_%03.0f_%03.0f_%01.1f.mat',...
-                            real(e_s_rel)*100,abs(imag(e_s_rel))*100,...
-                            k*10,uN*1000,MER*1e-5,Vvent,-1*log10(eta));
-
-dt_v = vsr.startTime:vsr.deltaTime:vsr.sim.time;
-for dt=1:length(vsr.atn_c)
-    atn_v(dt) = max(abs(vsr.atn_c{dt}{1}));
-end
-save(matFile,'dt_v','atn_v');
-end
 
 if(createGif==1)
    mfig = figure('pos',[300,100,550,450]);
