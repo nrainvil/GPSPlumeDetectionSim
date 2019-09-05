@@ -14,9 +14,9 @@ gps_day = round(GPS_sec/86400);
 % check for grm and then igs
 % assume that the files live in a subdirectory called sp3
 analysis_center='grm';
-filename = ['sp3\' analysis_center num2str(GPS_wk) num2str(gps_day) '.sp3'];
+filename = ['sp3/' analysis_center num2str(GPS_wk) num2str(gps_day) '.sp3'];
 analysis_center='igs';
-filename2 = ['sp3\' analysis_center num2str(GPS_wk) num2str(gps_day) '.sp3'];
+filename2 = ['sp3/' analysis_center num2str(GPS_wk) num2str(gps_day) '.sp3'];
  
 sp3 = read_sp3rev(filename);
 if length(sp3) > 0
